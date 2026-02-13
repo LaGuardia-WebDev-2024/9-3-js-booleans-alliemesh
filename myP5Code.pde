@@ -3,7 +3,7 @@ setup = function(){
     size(400, 400); 
 };
 
-var theNumber = 100;
+var theNumber = -17;
 
 //draw Function - will run repeatedly
 draw = function() {
@@ -18,7 +18,20 @@ draw = function() {
   text("It's zero", 10, 190);
 
   noFill();
+ 
+
+  
+ if(theNumber>0){
   rect(5, 60, 200, 40); 
+ }
+
+ if(theNumber<0){
+  rect(5, 110, 200, 40); 
+ }
+
+ if(theNumber==0){
+  rect(5, 160, 200, 40); 
+ }
 };
 
 //draw Function - will run when mouseClicked
